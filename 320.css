@@ -1,0 +1,357 @@
+@media screen and (min-width: 320px)  {
+  
+
+. {
+  transition: all 0.5s ease;
+}
+
+  
+/* ////////////////////////////////////// */
+            /* Navigation */
+/* ////////////////////////////////////// */
+
+
+
+nav{
+height: 25px; 
+width: 100%;
+background: rgba(255,255,255,.8);
+position: fixed;
+top: 0;
+padding-left: 5px;
+font-size: 12px;
+margin-bottom: 350px;
+z-index: 1000;
+transition: all 0.5s ease;
+
+}
+
+nav > h1{
+  margin: 0;
+}
+/* ////////////////////////////////////// */
+             /* Background Img */
+/* ////////////////////////////////////// */
+
+
+#background{
+  transition: all .5s ease;
+}
+
+.background-img{
+  background:  url("background.jpg");
+  opacity: 0.3;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -100;
+  top: 0;
+  transition: all 1s ease;
+
+  
+}
+
+.background-img2{
+  background:  url("background2.png");
+  opacity: 0.3;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -100;
+  top: 0;
+  background-repeat: no-repeat;
+  transition: all 1s ease;
+  
+}
+
+
+/* ////////////////////////////////////// */
+             /* Sections */
+/* ////////////////////////////////////// */
+
+.sectionBOX{
+  
+  margin: 0;
+  text-align: left;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+section{
+  
+  display: inline-block;
+  background-color: rgba(250, 250, 250, 0.6);
+  
+  vertical-align: top;
+  margin: auto;
+  transition: all 0.5s ease;
+  
+
+}
+
+.status{
+  width: 310px;
+  z-index: 2;
+  padding-bottom: 6px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  transition: all 0.5s ease;
+
+ 
+}
+
+.welcome-title{
+  width: 49.6%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+
+.game{
+
+  z-index: 100;
+  width: 310px;
+  margin: 0 5px;
+  height: 340px;
+  transition: all 0.5s ease;
+}
+
+.winner{
+  z-index: 1;
+  width: 310px;
+  
+  margin: 10px auto 0 auto;
+  transition: all 0.5s ease;
+  
+}
+
+.winnerTally{
+  width: 50%;
+  display: inline-block;
+  margin: 0 auto;
+
+}
+
+#winner{
+  margin: 0 auto;
+}
+
+#winCounterX{
+  background-color: royalblue;
+
+}
+#winCounterO{
+  background-color: lightgreen; 
+}
+
+.winnerContainer{
+  width: 100%;
+  position: relative;
+}
+
+
+
+
+/* ////////////////////////////////////// */
+              /* Game */
+/* ////////////////////////////////////// */
+
+
+
+ #box{
+  width: 310px;
+  height: 310px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  
+  box-shadow: 10px 10px 5px #888888
+  min-height: 200px;
+  min-width: 200px;  
+  transition: all 0.5s ease;
+  
+}
+
+
+
+
+.resetBTN{
+  color: grey;
+  
+  font-weight: 100;
+  margin-top: -7px;
+  font-size: 11px;
+}
+
+.fa{
+  font-weight: 100;
+}
+
+#player1{
+  text-align: center;
+  font-weight: 600;
+}
+
+#player2{
+  text-align: center;
+  font-weight: 600;
+}
+
+#player1:hover{
+  background-color: royalblue;
+  color: black;
+  font-weight: 900;
+}
+
+#player2:hover{
+  background-color: lightgreen;
+  color: black;
+  font-weight: 900;
+}
+
+.playerNameInput{
+  height: 25px;
+  width: 90%;
+  font-size: 12px;
+ }
+
+
+
+input{
+  width: 33.33333%;
+  height: 33.33333%;
+  position: relative;
+  border: 1px solid lightgrey;
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 70px;
+  vertical-align: top;
+  cursor:pointer;
+  transition: all 0.5s ease;
+
+}
+
+input:hover{
+  background-color: lightgrey;
+  transition: all 0.5s ease;
+
+}
+
+#btnReset{
+  width: 15px;
+  height: 15px;
+  border: none;
+  font-size: 18px;
+  background-color: #de7e7e;
+  margin-top: 0px;
+  color: black;
+  border-radius: 20px;
+  
+
+}
+#btnReset:hover{
+  
+  background-color: red;
+  color: black;
+  font-weight: 800;
+  
+
+}
+
+
+
+body{
+  background-color: royalblue;
+  
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  z-index: 4;
+}
+
+
+
+.animate{
+
+animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+.fadeX {
+  background:royalblue;
+  animation:myfirst 2s;
+  -moz-animation:myfirst 2s infinite; /* Firefox */
+  -webkit-animation:myfirst 2s infinite; /* Safari and Chrome */
+}
+
+@-moz-keyframes myfirst {
+    0%   {background:royalblue;}
+    50%  {background:dodgerblue;}
+    100%   {background:royalblue;}
+}
+
+@-webkit-keyframes myfirst 
+    {
+    0%   {background:royalblue;}
+    50%  {background:dodgerblue;}
+    100%   {background:royalblue;}
+}
+
+.fadeO {
+  background:lightgreen;
+  animation:mysecond 2s;
+  -moz-animation:mysecond 2s infinite; /* Firefox */
+  -webkit-animation:mysecond 2s infinite; /* Safari and Chrome */
+}
+
+@-moz-keyframes mysecond {
+    0%   {background:lightgreen;}
+    50%  {background:darkgreen;}
+    100%   {background:lightgreen;}
+}
+
+@-webkit-keyframes mysecond 
+    {
+    0%   {background:lightgreen;}
+    50%  {background:darkgreen;}
+    100%   {background:lightgreen;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+

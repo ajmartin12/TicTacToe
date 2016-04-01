@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200,200italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/png" href="icon.png"/>
+	<title>Tic Tack Toe!</title>
+
+</head>
+
+<body id="background" class="">
+
+<nav>
+    <h1>Tic Tak Toe<h1>
+</nav>
+
+<div class="sectionBOX">
+
+<section class="status">
+  
+  
+  <h2 class="welcome-title" id="player1Name">Welcome!</h2>
+  <h2 class="welcome-title" id="player2Name">Let's Play!</h2>
+  
+
+
+
+<input class="playerNameInput" id="player1" placeholder="Player 1 Name">  </input><!--
+-->
+<input class="playerNameInput" id="player2" placeholder="Player 2 Name">  </input>
+  
+  
+  
+</section>
+
+<section class="game">
+
+<div id="box">
+
+<!-- START of Row 1 -->
+
+     <input type="button" id="btn1" class="btnall" onclick="clickBtn('btn1')"></input><!--
+
+  --><input type="button" id="btn2" class="btnall" onclick="clickBtn('btn2')"></input><!--
+
+  --><input type="button" id="btn3" class="btnall" onclick="clickBtn('btn3')"></input>
+
+<!-- END of Row 1 -->
+
+<!-- START of Row 2 -->
+
+     <input type="button" id="btn4" class="btnall" onclick="clickBtn('btn4')"></input><!--
+
+  --><input type="button" id="btn5" class="btnall" onclick="clickBtn('btn5')"></input><!--
+
+  --><input type="button" id="btn6" class="btnall" onclick="clickBtn('btn6')"></input>
+
+  <!-- END of Row 2 -->
+
+  <!-- START of Row 3 -->
+
+     <input type="button" id="btn7" class="btnall" onclick="clickBtn('btn7')"></input><!--
+
+  --><input type="button" id="btn8" class="btnall" onclick="clickBtn('btn8')"></input><!--
+
+  --><input type="button" id="btn9" class="btnall" onclick="clickBtn('btn9')"></input>
+
+   <!-- END of Row 3 -->
+</div>
+
+
+<!-- Reset Button -->
+<div>
+  <i id="btnReset" onclick="reset()" class="fa fa-arrow-circle-o-left">
+  </i>
+  <p class="resetBTN">RESET</p>
+</div>
+
+</section>
+
+
+<section class="winner">
+  
+  <div class="winnerContainer"> 
+    <h2 class="winnerTally" id="winCounterX">0</h2><!--
+    --><h2 class="winnerTally" id="winCounterO">0</h2>
+  </div>
+  <h1 id ="winner"></h1>
+</section>
+<div id="background-animate" class="background-img ">
+</div>
+</div>
+
+
+
+<div class='line'></div>
+
+<script src="js.js"></script>
+
+
+
+
+
+
+
+</body>
+</html> 
+

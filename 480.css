@@ -1,0 +1,23 @@
+@media screen and (min-width: 480px) {
+  .status{
+    width: 400px;
+    
+  }
+
+  .game{
+    width: 400px;
+    height: 430px;
+  }
+
+  #box{
+    width: 400px;
+    height: 400px;
+  }
+
+  .winner{
+    width: 400px;
+  }
+
+
+
+}

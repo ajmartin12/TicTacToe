@@ -1,0 +1,42 @@
+@media screen and (min-width: 810px) {
+  .status{
+    width: 130px;
+    height: 515px;
+    padding-bottom: 0;
+    transition: all 0s ease;
+  }
+
+  .game{
+    width: 450px;
+    height: 515px;
+  }
+
+  #box{
+    width: 450px;
+    height: 480px;
+  }
+
+  .winner{
+    width: 130px;
+    height: 515px;
+    padding-bottom: 0;
+    margin: 0 auto 0 auto;
+    transition: all 0s ease;
+  }
+  .playerNameInput{
+    height: 50px;
+  }
+  .welcome-title{
+    width: 100%;
+    height:80px;
+    display: block;
+  }
+  .winnerTally{
+    width: 100%;
+    height:80px;
+    display: block;
+  }
+
+
+
+}

@@ -1,0 +1,41 @@
+@media screen and (min-width: 1200px) {
+  .status{
+    width: 180px;
+    height: 580px;
+    padding-bottom: 0;
+  }
+
+  .game{
+    width: 550px;
+    height: 580px;
+  }
+
+  #box{
+    width: 510px;
+    height: 510px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+  }
+
+  .winner{
+    width: 180px;
+    height: 580px;
+    padding-bottom: 0;
+    margin: 0 auto 0 auto;
+  }
+  
+  #btnReset{
+    margin: 10px 0 0 0;
+    width: 30px;
+    height: 30px;
+    font-size: 31px;
+  }
+  .resetBTN{
+    margin-top: 0;
+  }
+
+  
+
+
+
+}
